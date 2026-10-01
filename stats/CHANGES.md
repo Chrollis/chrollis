@@ -10,6 +10,8 @@ This repository was created from the GitHub Stats template. It is not a fork of 
 - Stage and push only the generated SVG files to the `generated` branch.
 - Keep the existing README image URLs unchanged.
 - No changes were made to the statistics application or SVG templates.
+- Adjust the file name and the workflow name of workflow yaml.
+- Change the cron from 00:04 to 04:00 everyday.
 
 ## License
 
