@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrollis</title>
+    <link>https://chrollis.github.io/chrollis</link>
+    <description>Snow-flecked foam floats in the noon cup; smartweed shoots and wild greens, a taste of spring; the world&apos;s true taste is pure joy.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Oct 2026 13:09:39 GMT</lastBuildDate>
+    <atom:link href="https://chrollis.github.io/chrollis/feeds/rss.xml" rel="self" type="application/rss+xml" />
+
+  </channel>
+</rss>

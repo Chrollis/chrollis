@@ -1,0 +1,63 @@
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash -euxo pipefail {0}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.16.0
+
+      - name: Build
+        working-directory: ./stats
+        run: zig build
+
+      - name: Generate images
+        run: ./stats/zig-out/bin/github-stats
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
+          EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS }}
+          EXCLUDE_PRIVATE: 'false'
+          SILENT: 'true'
+          MAX_RETRIES: 5
+
+      - name: Upload generated svgs
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-svgs
+          path: |
+            overview.svg
+            languages.svg
+
+  commit:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download generated svgs
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-svgs
+
+      - name: Commit to the repo
+        run: |
+          git config --global user.name "Chrollis"
+          git config --global user.email "chrollis.phrott@outlook.com"
+          git checkout --orphan generated
+          git rm -rf --cached .
+          git add overview.svg languages.svg
+          git commit -m 'chore(gen): update or upload generated statistics cards'
+          git push --force origin generated

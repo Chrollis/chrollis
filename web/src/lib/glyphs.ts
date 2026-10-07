@@ -1,0 +1,6 @@
+export const ARROW_NE = '\u2197'
+export const COPYRIGHT = '\u00A9'
+export const QUOTE_OPEN = '\u201C'
+export const QUOTE_CLOSE = '\u201D'
+export const MIDDOT = '\u00B7'
+export const EN_DASH = '\u2013'

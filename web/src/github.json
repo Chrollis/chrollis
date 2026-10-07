@@ -1,0 +1,88 @@
+{
+  "fetchedAt": "2026-10-05T13:09:41.201Z",
+  "owner": "Chrollis",
+  "repos": [
+    {
+      "name": "chrollis",
+      "fullName": "Chrollis/chrollis",
+      "description": "My Github profile README, integrated with a statistics module and personal webpage",
+      "url": "https://github.com/Chrollis/chrollis",
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-10-05T12:43:53Z",
+      "createdAt": "2026-10-05T12:43:52Z",
+      "archived": false,
+      "fork": false,
+      "license": null,
+      "defaultBranch": "master"
+    },
+    {
+      "name": "archived-misc",
+      "fullName": "Chrollis/archived-misc",
+      "description": "Personal archive of miscellaneous projects, coursework, and experiments. Not actively maintained.",
+      "url": "https://github.com/Chrollis/archived-misc",
+      "homepage": "",
+      "language": "C++",
+      "topics": [
+        "archived",
+        "misc",
+        "small-projects"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-10-05T05:38:03Z",
+      "createdAt": "2026-10-01T06:43:15Z",
+      "archived": false,
+      "fork": false,
+      "license": "MIT",
+      "defaultBranch": "main"
+    },
+    {
+      "name": "feline-lyrics",
+      "fullName": "Chrollis/feline-lyrics",
+      "description": null,
+      "url": "https://github.com/Chrollis/feline-lyrics",
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-10-01T06:47:06Z",
+      "createdAt": "2026-10-01T06:47:05Z",
+      "archived": false,
+      "fork": false,
+      "license": null,
+      "defaultBranch": "main"
+    }
+  ],
+  "stats": {
+    "overview": [],
+    "languages": []
+  },
+  "languageColours": {
+    "C++": "#f34b7d",
+    "C": "#555555",
+    "Rust": "#dea584",
+    "TypeScript": "#3178c6",
+    "JavaScript": "#f1e05a",
+    "Vue": "#41b883",
+    "Python": "#3572A5",
+    "HTML": "#e34c26",
+    "CSS": "#563d7c",
+    "SCSS": "#c6538c",
+    "Zig": "#ec915c",
+    "CMake": "#DA3434",
+    "Shell": "#89e051",
+    "PowerShell": "#012456",
+    "Ruby": "#701516",
+    "Emacs Lisp": "#c065db",
+    "Batchfile": "#C1F12E",
+    "NSIS": "#aabbcc"
+  }
+}
